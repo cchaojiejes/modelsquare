@@ -1,0 +1,155 @@
+.online-inference-layout {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.online-inference-content {
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page-header-card {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-title h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.page-title p {
+  margin: 4px 0 0 0;
+  color: #8c8c8c;
+  font-size: 14px;
+}
+
+.filter-card {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-section {
+  padding: 8px 0;
+}
+
+.table-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.model-name {
+  font-weight: 500;
+  color: #262626;
+  margin-bottom: 4px;
+}
+
+.service-id {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+.pricing-info {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.pricing-info div {
+  margin-bottom: 2px;
+}
+
+.limits-info {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.limits-info div {
+  margin-bottom: 2px;
+}
+
+/* 状态标签样式 */
+.ant-tag {
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 2px 8px;
+}
+
+/* 表格样式优化 */
+.ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+  color: #262626;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.ant-table-tbody > tr > td {
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #fafafa;
+}
+
+/* 操作按钮样式 */
+.ant-btn-link {
+  padding: 0;
+  height: auto;
+  line-height: 1.4;
+}
+
+.ant-dropdown-menu-item {
+  padding: 8px 12px;
+}
+
+.ant-dropdown-menu-item-danger {
+  color: #ff4d4f;
+}
+
+.ant-dropdown-menu-item-danger:hover {
+  background: #fff2f0;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .online-inference-content {
+    padding: 16px;
+  }
+  
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .filter-section {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-section .ant-space {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .filter-section .ant-space .ant-space-item {
+    width: 100%;
+  }
+  
+  .filter-section .ant-input,
+  .filter-section .ant-select {
+    width: 100% !important;
+  }
+}

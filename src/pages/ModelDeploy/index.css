@@ -1,0 +1,453 @@
+.model-deploy-layout {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.model-deploy-content {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 部署类型选择页面 */
+.deploy-type-selection {
+  background: white;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.deploy-types {
+  margin: 32px 0;
+}
+
+.scenario-deploy-section {
+  margin-top: 32px;
+}
+
+.scenario-deploy-section .ant-typography-h4 {
+  margin-bottom: 16px;
+  color: #262626;
+}
+
+.deploy-type-card {
+  margin-bottom: 16px;
+  border: 2px solid #f0f0f0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.deploy-type-card:hover {
+  border-color: #1890ff;
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.15);
+}
+
+.deploy-type-card.selected {
+  border-color: #1890ff;
+  background: #f6ffed;
+}
+
+.deploy-type-card.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.deploy-type-card.disabled:hover {
+  border-color: #f0f0f0;
+  box-shadow: none;
+}
+
+.deploy-type-content {
+  padding: 8px;
+}
+
+.deploy-type-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.deploy-type-icon {
+  font-size: 24px;
+  color: #1890ff;
+}
+
+.deploy-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* 部署表单页面 */
+.deploy-form-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.deploy-form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: #fafafa;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.deploy-steps {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.step-number {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.step-number.completed {
+  background: #52c41a;
+  color: white;
+}
+
+.step-number.current {
+  background: #1890ff;
+  color: white;
+}
+
+.step-text {
+  font-size: 14px;
+  color: #8c8c8c;
+}
+
+.step-text.current {
+  color: #1890ff;
+  font-weight: 500;
+}
+
+.deploy-form-content {
+  display: flex;
+  min-height: 600px;
+}
+
+.form-section {
+  flex: 1;
+  padding: 24px;
+  border-right: 1px solid #f0f0f0;
+}
+
+.pricing-section {
+  width: 320px;
+  padding: 24px;
+  background: #fafafa;
+}
+
+.form-card {
+  border: none;
+  box-shadow: none;
+}
+
+.form-card .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 0 0 16px 0;
+}
+
+.form-card .ant-card-body {
+  padding: 24px 0 0 0;
+}
+
+.model-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.model-name {
+  flex: 1;
+}
+
+.model-info-display {
+  margin-top: 16px;
+  padding: 16px;
+  background: #f9f9f9;
+  border-radius: 6px;
+}
+
+.model-info-display .ant-descriptions-item-label {
+  color: #8c8c8c;
+  font-weight: normal;
+}
+
+.pricing-card {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-info {
+  margin-bottom: 16px;
+}
+
+.pricing-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.pricing-label {
+  color: #8c8c8c;
+}
+
+.pricing-value {
+  color: #262626;
+  font-weight: 500;
+}
+
+.pricing-details {
+  margin-top: 16px;
+}
+
+.price-section {
+  margin: 16px 0;
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.price-card {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.price-card:hover {
+  border-color: #1890ff;
+  box-shadow: 0 2px 8px rgba(24, 144, 255, 0.15);
+}
+
+.price-card.input-price {
+  border-left: 4px solid #52c41a;
+}
+
+.price-card.output-price {
+  border-left: 4px solid #1890ff;
+}
+
+.price-type {
+  font-size: 12px;
+  color: #8c8c8c;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.price-amount {
+  font-size: 24px;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 4px;
+}
+
+.price-unit {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+.billing-note {
+  background: #f6ffed;
+  border: 1px solid #b7eb8f;
+  border-radius: 6px;
+  padding: 12px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+/* 确认页面样式 */
+.deploy-confirmation-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.confirmation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.confirmation-content {
+  background: #fff;
+}
+
+.confirmation-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation-actions {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.billing-note .ant-typography {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.deploy-action {
+  margin-top: 24px;
+}
+
+.deploy-action .ant-btn {
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .deploy-form-content {
+    flex-direction: column;
+  }
+  
+  .form-section {
+    border-right: none;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .pricing-section {
+    width: 100%;
+  }
+  
+  .deploy-form-header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+}
+
+/* 动画效果 */
+.deploy-type-card {
+  animation: fadeInUp 0.3s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.deploy-form-container {
+  animation: slideInRight 0.4s ease;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 加载状态 */
+.ant-btn-loading {
+  pointer-events: none;
+}
+
+/* 表单验证样式 */
+.ant-form-item-has-error .ant-select-selector {
+  border-color: #ff4d4f !important;
+}
+
+.ant-form-item-has-error .ant-input {
+  border-color: #ff4d4f !important;
+}
+
+/* 工具提示样式 */
+.ant-tooltip {
+  max-width: 300px;
+}
+
+/* 标签样式 */
+.ant-tag {
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* 描述列表样式 */
+.ant-descriptions-item {
+  padding-bottom: 8px;
+}
+
+.ant-descriptions-item-label {
+  width: 80px;
+}
+
+/* 分割线样式 */
+.ant-divider {
+  margin: 16px 0;
+}
+
+/* 卡片标题样式 */
+.ant-card-head-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* 按钮组样式 */
+.ant-btn + .ant-btn {
+  margin-left: 8px;
+}
+
+/* 选择器下拉样式 */
+.ant-select-dropdown {
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 表单标签样式 */
+.ant-form-item-label > label {
+  font-weight: 500;
+  color: #262626;
+}
+
+/* 输入框聚焦样式 */
+.ant-input:focus,
+.ant-select-focused .ant-select-selector {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}

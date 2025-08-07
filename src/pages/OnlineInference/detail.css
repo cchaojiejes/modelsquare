@@ -1,0 +1,235 @@
+.inference-detail-layout {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.inference-detail-content {
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.detail-header-card {
+  margin-bottom: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 8px 0;
+}
+
+.header-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.back-button {
+  margin-top: 8px;
+  color: #666;
+  font-size: 14px;
+}
+
+.back-button:hover {
+  color: #1890ff;
+}
+
+.service-info h3 {
+  margin: 0 0 8px 0;
+  color: #262626;
+}
+
+.service-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: #8c8c8c;
+  font-size: 13px;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+.header-actions {
+  margin-top: 8px;
+}
+
+.detail-content-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detail-content-card .ant-tabs-content-holder {
+  padding: 24px;
+}
+
+.detail-content-card .ant-tabs-tab {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.code-block {
+  background-color: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 16px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 13px;
+  line-height: 1.45;
+  overflow-x: auto;
+  white-space: pre;
+  color: #24292e;
+}
+
+.ant-statistic {
+  text-align: center;
+}
+
+.ant-statistic-title {
+  font-size: 14px;
+  color: #8c8c8c;
+  margin-bottom: 8px;
+}
+
+.ant-statistic-content {
+  font-size: 24px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.ant-statistic-content-prefix {
+  margin-right: 8px;
+  color: #1890ff;
+}
+
+.ant-descriptions-item-label {
+  font-weight: 500;
+  color: #595959;
+  width: 120px;
+}
+
+.ant-descriptions-item-content {
+  color: #262626;
+}
+
+.ant-card-head-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.ant-table-thead > tr > th {
+  background-color: #fafafa;
+  font-weight: 600;
+  color: #262626;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background-color: #f5f5f5;
+}
+
+.ant-tag {
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.ant-btn {
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.ant-btn-primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.ant-btn-primary:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
+
+.ant-btn-danger {
+  color: #ff4d4f;
+  border-color: #ff4d4f;
+}
+
+.ant-btn-danger:hover {
+  color: #fff;
+  background-color: #ff4d4f;
+  border-color: #ff4d4f;
+}
+
+.ant-modal-header {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 16px 24px;
+}
+
+.ant-modal-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.ant-form-item-label > label {
+  font-weight: 500;
+  color: #262626;
+}
+
+.ant-input {
+  border-radius: 6px;
+}
+
+.ant-input:focus,
+.ant-input-focused {
+  border-color: #40a9ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+@media (max-width: 1200px) {
+  .inference-detail-content {
+    padding: 16px;
+  }
+  
+  .detail-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .header-left {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .header-actions {
+    margin-top: 0;
+    align-self: flex-start;
+  }
+  
+  .service-meta {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .detail-content-card .ant-tabs-content-holder {
+    padding: 16px;
+  }
+  
+  .ant-col {
+    margin-bottom: 16px;
+  }
+  
+  .header-actions .ant-space {
+    flex-wrap: wrap;
+  }
+  
+  .code-block {
+    font-size: 12px;
+    padding: 12px;
+  }
+}
